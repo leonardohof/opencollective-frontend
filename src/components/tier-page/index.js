@@ -209,7 +209,7 @@ class TierPage extends Component {
                     canEdit={canEditTier}
                     values={tier}
                     field="name"
-                    placeholder={<FormattedMessage id="TierPage.AddTitle" defaultMessage="Add a title" />}
+                    adminPlaceholder={<FormattedMessage id="TierPage.AddTitle" defaultMessage="Add a title" />}
                   />
                 </H1>
                 <H3 color="black.500" fontSize="H5" mb={4} whiteSpace="pre-line" data-cy="shortDescription">
@@ -218,7 +218,7 @@ class TierPage extends Component {
                     canEdit={canEditTier}
                     values={tier}
                     field="description"
-                    placeholder={
+                    adminPlaceholder={
                       <FormattedMessage id="TierPage.AddDescription" defaultMessage="Add a short description" />
                     }
                   />
@@ -228,7 +228,7 @@ class TierPage extends Component {
                   values={tier}
                   field="longDescription"
                   canEdit={canEditTier}
-                  placeholder={
+                  adminPlaceholder={
                     <FormattedMessage id="TierPage.AddLongDescription" defaultMessage="Add a rich description" />
                   }
                 >
